@@ -1,0 +1,48 @@
+body {
+        font: 1em 'Myriad Pro', Arial, sans-serif;
+        background-image: url('http://subtlepatterns.com/patterns/zwartevilt.png');
+        /*background-color: #FFF;*/
+}
+
+h2{
+        color: #fff;
+
+}
+
+p{
+        color: #fff;
+        align-content: center;
+}
+
+#text1 {
+    border: 2px solid rgb(173, 204, 204);
+    height: 31px;
+    width: 223px;
+    box-shadow: 0 0 27px rgb(204, 204, 204) inset;
+    transition: 500ms all ease;
+    padding: 3px 3px 3px 3px;
+}
+
+#text1 {
+
+            background: #FFF;
+            height: 25px;
+            width: 150x;
+            border-radius: 2em;
+            border: none;
+            color: #A2A2A2;
+            padding-left: 1.5em;
+            outline: none;
+            box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%)
+
+}
+
+#text1:hover,
+#text1:focus {
+    width: 260px;
+    transition: 500ms all ease;
+    background-size: 25px 25px;
+    background-position: 96% 62%;
+    padding: 3px 32px 3px 3px;
+}
+</style>
