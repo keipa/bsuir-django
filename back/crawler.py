@@ -17,7 +17,13 @@ class Crawler():
         self.full_html = self.get_html_on_the_page(web_adress)
         self.relative_and_absolute_links = self.throught_the_html(self.full_html)
         self.urls_on_the_page = self.convert_relative_links(self.relative_and_absolute_links, web_adress)
-        self.clear_text = self.get_readable_text(self.full_html)
+        text = self.get_readable_text(self.full_html)
+        self.clear_text = text[1]
+        self.web_address = web_adress
+        self.string_text = text[0]
+        self.count_of_words = len(self.clear_text)
+        print(self.count_of_words)
+        print(text[2])
 
 
     def get_html_on_the_page(self,web_aderess):
@@ -34,6 +40,8 @@ class Crawler():
         # abbr bdo blockquote q cite dfn p br hr
         soup = BeautifulSoup(text, 'html.parser')
         docs = []
+        words = []
+        text = ""
         docs.append(soup.title.text)
         tag_array = {"b",
                      "em",
@@ -61,7 +69,27 @@ class Crawler():
         for tag in tag_array:
             for content in soup.find_all(tag):
                 docs.append(content.get_text())
-        return docs
+
+        for frase in docs:
+            if len(frase)!=0:
+                text += frase+ " "
+                for word in frase.split(" "):
+                    e = word.replace("'", "")
+                    e = e.replace(",", "")
+                    e = e.replace("(", "")
+                    e = e.replace(")", "")
+                    e = e.replace("+", "")
+                    e = e.replace(".", "")
+                    e = e.replace("=", "")
+                    e = e.replace("[", "")
+                    e = e.replace("]", "")
+                    e = e.replace("{", "")
+                    e = e.replace("}", "")
+                    e = e.replace(" ", "")
+                    if len(e) == 0:
+                        continue
+                    words.append(e)
+        return text, words, docs
 
 
     def throught_the_html(self, html_text):
@@ -91,15 +119,10 @@ class Crawler():
                 new_list.append(link)
         return new_list
 
-
-
-
-
-
 @benchmark
 def main():
-    c = Crawler("http://finance.tut.by/news497246.html")
-    print(c.clear_text)
+    c = Crawler("http://www.bsuir.by/en/enrollment")
+    print(c.string_text)
 
 
 if __name__ == '__main__':
