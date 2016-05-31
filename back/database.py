@@ -54,7 +54,7 @@ class InvertedDatabase():
         self.new_ins = self.db.prepare("INSERT INTO inverted_index VALUES ($1, $2);")
         self.update = self.db.prepare("UPDATE inverted_index SET urls=$1 WHERE word=$2;")
         self.count_of_insertions = 0
-        self.how_often_show_stats = 100
+        self.how_often_show_stats = 10000
         print("Inverted Base connected")
 
     def show_all_words(self):
