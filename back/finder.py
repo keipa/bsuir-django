@@ -7,18 +7,20 @@ class Finder():
         base = back.database.InvertedDatabase()
         self.a = base.finding(request)
 
-
-    def ranging(self):
-        answer = {}
-
     def response(self):
-        return self.a
+        answer = {}
+        for each in self.a:
+            if each in answer:
+                answer[each] += 1
+            else:
+                answer[each] = 0
+        return answer
 
 
 
 
 def main():
-    f = Finder("pleased")
+    f = Finder("Users")
     print(f.response())
 
 if __name__ == '__main__':

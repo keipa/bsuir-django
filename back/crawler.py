@@ -119,6 +119,7 @@ class Crawler():
                     e = e.replace("{", "")
                     e = e.replace("}", "")
                     e = e.replace(" ", "")
+                    e = e.lower()
                     if len(e) == 0:
                         continue
                     words.append(e)
