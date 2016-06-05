@@ -24,6 +24,8 @@ class ForwardDatabase():
     def __del__(self):
         self.db.close()
 
+
+
     def make_insertion(self, key, value):
         # self.count_of_insertions += 1
         # if self.count_of_insertions % self.how_often_show_stats == 0:
@@ -54,12 +56,21 @@ class InvertedDatabase():
         self.new_ins = self.db.prepare("INSERT INTO inverted_index VALUES ($1, $2);")
         self.update = self.db.prepare("UPDATE inverted_index SET urls=$1 WHERE word=$2;")
         self.count_of_insertions = 0
-        self.how_often_show_stats = 100
+        self.how_often_show_stats = 10000
+        self.find = self.db.prepare("select urls from inverted_index where word=$1;")
         print("Inverted Base connected")
 
     def show_all_words(self):
         for text in self.db.prepare("SELECT word FROM inverted_index"):
             print(text[0])
+
+    def finding(self, request):
+        result = self.find(request)
+        a = []
+        for ar in result:
+            for link in ar[0]:
+                a.append(link)
+        return a
 
     def show_base(self):
         for text in self.db.prepare("SELECT * FROM inverted_index;"):
@@ -67,6 +78,9 @@ class InvertedDatabase():
 
     def __del__(self):
         self.db.close()
+
+
+
 
     def make_insertion(self, key, value):
         self.count_of_insertions += 1
@@ -102,9 +116,9 @@ def main():
     # we can connect to database
     # add elements to it
 
-    base = ForwardDatabase()
-    base.make_insertion("word1", "ololol")
-    base.show_base()
+    base = InvertedDatabase()
+    base.finding("word1")
+    # base.show_base()
     del base
 
 
