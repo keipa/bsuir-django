@@ -13,15 +13,19 @@ class Finder():
             if each in answer:
                 answer[each] += 1
             else:
-                answer[each] = 0
+                answer[each] = 1
         return answer
 
 
 
 
 def main():
-    f = Finder("Users")
+    f = Finder("and")
     print(f.response())
 
 if __name__ == '__main__':
     main()
+
+
+# delete from inverted_index *;
+# delete from forward_index *;

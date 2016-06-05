@@ -117,7 +117,7 @@ def main():
     # add elements to it
 
     base = InvertedDatabase()
-    base.finding("word1")
+    print(base.finding("and"))
     # base.show_base()
     del base
 
