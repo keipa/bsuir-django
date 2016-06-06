@@ -6,7 +6,7 @@ class ForwardDatabase():
         self.db = pg_driver.connect(user="postgres",
                                     password='35227411',
                                     host='localhost',
-                                    database='ss_data',
+                                    database='postgres',
                                     port=5432)
         self.new_ins = self.db.prepare("INSERT INTO forward_index VALUES ($1, $2);")
         self.count_of_insertions = 0
@@ -21,8 +21,8 @@ class ForwardDatabase():
         for text in self.db.prepare("SELECT * FROM forward_index;"):
             print(text)
 
-    def __del__(self):
-        self.db.close()
+    # def __del__(self):
+    #     self.db.close()
 
 
 
@@ -51,7 +51,7 @@ class InvertedDatabase():
         self.db = pg_driver.connect(user="postgres",
                                     password='35227411',
                                     host='localhost',
-                                    database='ss_data',
+                                    database='postgres',
                                     port=5432)
         self.new_ins = self.db.prepare("INSERT INTO inverted_index VALUES ($1, $2);")
         self.update = self.db.prepare("UPDATE inverted_index SET urls=$1 WHERE word=$2;")
@@ -76,8 +76,8 @@ class InvertedDatabase():
         for text in self.db.prepare("SELECT * FROM inverted_index;"):
             print(text)
 
-    def __del__(self):
-        self.db.close()
+    # def __del__(self):
+    #     self.db.close()
 
 
 
@@ -117,9 +117,9 @@ def main():
     # add elements to it
 
     base = InvertedDatabase()
-    print(base.finding("and"))
+    base.finding("word1")
     # base.show_base()
-    del base
+    # del base
 
 
 if __name__ == '__main__':
