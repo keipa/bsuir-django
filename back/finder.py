@@ -4,12 +4,22 @@ import postgresql.driver as pg_driver
 
 class Finder():
     def __init__(self, request):
-        base = back.database.InvertedDatabase()
-        self.a = base.finding(request)
+        self.req = request
+        ibase = back.database.InvertedDatabase()
+        self.fbase = back.database.ForwardDatabase()
+        self.response = ibase.finding(request)
+        self.response = self.ranging()
+        self.get_description()
 
-    def response(self):
+    def get_description(self):
+        for link in self.response:
+            text = self.fbase.get_text(link)
+            text = text.replace("\n", "")
+            self.response[link] = (self.response[link], text[:200]+"...")
+
+    def ranging(self):
         answer = {}
-        for each in self.a:
+        for each in self.response:
             if each in answer:
                 answer[each] += 1
             else:
@@ -20,8 +30,12 @@ class Finder():
 
 
 def main():
-    f = Finder("and")
-    print(f.response())
+    f = Finder("postgres")
+    # print(f.response)
+    res = f.response
+    print("Searching for: \"", f.req, "\"")
+    for link in res:
+        print(link,"\n", res[link])
 
 if __name__ == '__main__':
     main()

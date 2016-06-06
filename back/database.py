@@ -17,9 +17,18 @@ class ForwardDatabase():
         for text in self.db.prepare("SELECT url FROM forward_index"):
             print(text[0])
 
+    def get_text(self, link):
+        results = self.db.prepare("SELECT content FROM forward_index WHERE url=\'"+link+"\'")
+        content = []
+        for con in results:
+            content.append(con)
+        return content[0][0]
+
     def show_base(self):
         for text in self.db.prepare("SELECT * FROM forward_index;"):
             print(text)
+
+
 
     # def __del__(self):
     #     self.db.close()
@@ -65,11 +74,12 @@ class InvertedDatabase():
             print(text[0])
 
     def finding(self, request):
-        result = self.find(request)
         a = []
-        for ar in result:
-            for link in ar[0]:
-                a.append(link)
+        for word in request.split(" "):
+            result = self.find(word)
+            for ar in result:
+                for link in ar[0]:
+                    a.append(link)
         return a
 
     def show_base(self):

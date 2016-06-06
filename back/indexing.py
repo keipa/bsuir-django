@@ -12,8 +12,10 @@ def create_parser():
     parser.add_argument('-r', "--relative", action='store_false')
     return parser
 
+
 def benchmark(func):
     import time
+
     def wrapper(*args, **kwargs):
         start_time = time.time()
         res = func(*args, **kwargs)

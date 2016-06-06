@@ -56,7 +56,7 @@ position: relative
     border: 2px solid rgb(173, 204, 204);
     height: 31px;
     margin-left: auto;
-position: relative 
+position: relative ;
     margin-right: auto;
     width: 223px;
     box-shadow: 0 0 27px rgb(204, 204, 204) inset;
@@ -69,8 +69,8 @@ position: relative
     margin-right: auto;
             background: #FFF;
             height: 25px;
-position: relative 
-            width: 150x;
+position: relative;
+            width: 150px;
             border-radius: 2em;
             border: none;
             color: #A2A2A2;
@@ -84,7 +84,7 @@ position: relative
 #text1:focus {
     width: 260px;
     transition: 500ms all ease;
-position: relative 
+position: relative ;
     background-size: 25px 25px;
     background-position: 96% 62%;
     padding: 3px 32px 3px 3px;

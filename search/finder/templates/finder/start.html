@@ -7,29 +7,37 @@
         <input type="text" id="inp" onkeypress="return runScript(event)"> 
     </div>
 
+    <!--<script>-->
+		<!--function runScript(e) {-->
+    		<!--if (e.keyCode == 13) {-->
+        		<!--//var tb = document.getElementById("scriptBox");-->
+        		<!--//eval(tb.value);-->
+        		<!--//return false;-->
+        		<!--alert("kekos");-->
+        		<!--$.ajax({-->
+        			<!--method: 'POST',-->
+        			<!--url: 'http://127.0.0.1:8000/search/',-->
+        			<!--data: {-->
+            			<!--'request': document.getElementById('inp').value,-->
+        			<!--},-->
+        			<!--success: function(data){-->
+            			<!--$scope.key = data['key'];-->
+            			<!--$scope.isAuthorized = true;-->
+            			<!--$window.alert('You are logged in.');-->
+        			<!--},-->
+        			<!--error: function(data){-->
+            			<!--$window.alert("Something was wrong.");-->
+        			<!--},-->
+      			<!--})-->
+    		<!--}-->
+		<!--}-->
+	<!--</script>-->
     <script>
 		function runScript(e) {
-    		if (e.keyCode == 13) {
-        		//var tb = document.getElementById("scriptBox");
-        		//eval(tb.value);
-        		//return false;
-        		alert("kekos");
-        		$.ajax({
-        			method: 'POST',
-        			url: 'http://127.0.0.1:8000/search/',
-        			data: {
-            			'request': document.getElementById('inp').value,
-        			},
-        			success: function(data){
-            			$scope.key = data['key'];
-            			$scope.isAuthorized = true;
-            			$window.alert('You are logged in.');
-        			},
-        			error: function(data){
-            			$window.alert("Something was wrong.");
-        			},
-      			})
-    		}
-		}
+            if (e.keyCode == 13) {
+    window.location = "http://127.0.0.1:8000:/search/?request=" + encodeURIComponent(event.target.value);
+}
+        }
 	</script>
+
 {% endblock content %}
