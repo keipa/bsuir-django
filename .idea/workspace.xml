@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0cfb00c-c2b2-4d7a-94a1-ddafb475552e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/search/database.sqlite3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/database.py" afterPath="$PROJECT_DIR$/back/database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/finder.py" afterPath="$PROJECT_DIR$/back/finder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/indexing.py" afterPath="$PROJECT_DIR$/back/indexing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/index.html" afterPath="$PROJECT_DIR$/front/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/static/css/main.css" afterPath="$PROJECT_DIR$/search/finder/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/templates/finder/base.html" afterPath="$PROJECT_DIR$/search/finder/templates/finder/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/templates/finder/start.html" afterPath="$PROJECT_DIR$/search/finder/templates/finder/start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/views.py" afterPath="$PROJECT_DIR$/search/finder/views.py" />
     </list>
     <ignored path="bsuir-django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +20,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/bsuir-django$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1465242029851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
     <SUITE FILE_PATH="coverage/bsuir-django$database.coverage" NAME="database Coverage Results" MODIFIED="1465241955850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
-    <SUITE FILE_PATH="coverage/bsuir-django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1465245942795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
+    <SUITE FILE_PATH="coverage/bsuir-django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1465246957609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/bsuir-django$finder.coverage" NAME="finder Coverage Results" MODIFIED="1465242825291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -100,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -130,31 +122,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/search/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="start.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/start.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search/finder/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="906">
-              <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="146">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -187,10 +169,10 @@
         <option value="$PROJECT_DIR$/back/database.py" />
         <option value="$PROJECT_DIR$/back/finder.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/053e3e5d-1777-4b23-a820-f4283521ee64/console.sql" />
-        <option value="$PROJECT_DIR$/search/finder/static/css/main.css" />
-        <option value="$PROJECT_DIR$/search/finder/templates/finder/start.html" />
         <option value="$PROJECT_DIR$/search/finder/views.py" />
         <option value="$PROJECT_DIR$/search/finder/templates/finder/base.html" />
+        <option value="$PROJECT_DIR$/search/finder/templates/finder/start.html" />
+        <option value="$PROJECT_DIR$/search/finder/static/css/main.css" />
       </list>
     </option>
   </component>
@@ -364,6 +346,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="fin&#9;FILE&#9;file://D:/LABS/bsuir-django/back/finder.py&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LABS\bsuir-django\search\finder\templates\finder" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.manage">
     <configuration default="false" name="indexing" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -693,13 +680,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3888175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8559892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2937018" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2937018" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47780678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6581427" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18894601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -765,27 +752,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/back/database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-          <folding>
-            <marker date="1465241389900" expanded="true" signature="397:438" ph="INSERT INTO forward_index... " />
-            <marker date="1465241389900" expanded="true" signature="626:655" ph="SELECT url F... forward_index" />
-            <marker date="1465241389900" expanded="true" signature="752:808" ph="SELECT conte... forward_index" />
-            <marker date="1465241389900" expanded="true" signature="984:1011" ph="SELECT * FRO... forward_index" />
-            <marker date="1465241389900" expanded="true" signature="1344:1395" ph="SELECT url F... forward_index" />
-            <marker date="1465241389900" expanded="true" signature="2086:2128" ph="INSERT INTO inverted_index... " />
-            <marker date="1465241389900" expanded="true" signature="2171:2218" ph="UPDATE inver... " />
-            <marker date="1465241389900" expanded="true" signature="2338:2383" ph="select urls inverted_index" />
-            <marker date="1465241389900" expanded="true" signature="2496:2527" ph="SELECT word inverted_index" />
-            <marker date="1465241389900" expanded="true" signature="2863:2891" ph="SELECT * FRO... inverted_index" />
-            <marker date="1465241389900" expanded="true" signature="3216:3270" ph="SELECT word inverted_index" />
-            <marker date="1465241389900" expanded="true" signature="3684:3738" ph="SELECT urls inverted_index" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -938,6 +904,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,14 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="906">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search/finder/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1111,18 +1070,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/start.html">
+    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/base.html">
+    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="120">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding />
         </state>
       </provider>

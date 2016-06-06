@@ -42,8 +42,8 @@ position: absolute;
 
 h2{
     color: #fff;
-text-align:center;
-position: relative 
+    text-align:center;
+    position: relative
 }
 
 p{
@@ -55,22 +55,23 @@ position: relative
 #text1 {
     border: 2px solid rgb(173, 204, 204);
     height: 31px;
-    margin-left: auto;
-position: relative ;
-    margin-right: auto;
+    /*margin-left: auto;*/
+    position: relative ;
+    /*margin-right: auto;*/
     width: 223px;
+    /*text-align: center;*/
     box-shadow: 0 0 27px rgb(204, 204, 204) inset;
     transition: 500ms all ease;
     padding: 3px 3px 3px 3px;
 }
 
 #text1 {
-    margin-left: auto;
-    margin-right: auto;
+            margin-left: auto;
+            margin-right: auto;
             background: #FFF;
             height: 25px;
-position: relative;
-            width: 150px;
+            position: relative;
+            width: 70px;
             border-radius: 2em;
             border: none;
             color: #A2A2A2;
@@ -82,11 +83,11 @@ position: relative;
 
 #text1:hover,
 #text1:focus {
-    width: 260px;
+    width: 100px;
     transition: 500ms all ease;
-position: relative ;
-    background-size: 25px 25px;
-    background-position: 96% 62%;
-    padding: 3px 32px 3px 3px;
+/*position: relative ;*/
+    /*background-size: 25px 25px;*/
+    /*background-position: 96% 62%;*/
+    /*padding: 3px 32px 3px 3px;*/
 }
 
