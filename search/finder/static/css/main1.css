@@ -1,15 +1,9 @@
 body {
         font: 1em 'Myriad Pro', Arial, sans-serif;
 
-background: linear-gradient(86deg, #d5c917, #32a846, #7a51a1);
-background-size: 600% 600%;
+background: linear-gradient(45deg,   midnightblue,cornflowerblue,cadetblue);background-size: 600% 600%;
 
-animation: AnimationName 24s ease infinite;
-
-
-
-
-
+animation: AnimationName 12s ease infinite;
 }
 
 @keyframes AnimationName {

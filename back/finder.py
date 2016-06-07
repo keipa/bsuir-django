@@ -14,8 +14,8 @@ class Finder():
     def get_description(self):
         for link in self.response:
             text = self.fbase.get_text(link)
-            text = text.replace("\n", "")
-            self.response[link] = (self.response[link], text[:200]+"...")
+            text = text[0].replace("\n", ""), text[1]
+            self.response[link] = (self.response[link], text[0][:200]+"...", text[1])
 
     def ranging(self):
         answer = {}

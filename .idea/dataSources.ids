@@ -10,8 +10,8 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>10591</introspection-state-number>
-        <introspection-timestamp>2016-06-06.21:13:41.277</introspection-timestamp>
+        <introspection-state-number>53536</introspection-state-number>
+        <introspection-timestamp>2016-06-07.23:05:34.602</introspection-timestamp>
       </schema>
       <sequence id="3" parent="2" name="auth_group_id_seq">
         <object-id>16458</object-id>
@@ -91,7 +91,7 @@
       </table>
       <table id="22" parent="2" name="forward_index">
         <object-id>16393</object-id>
-        <state-number>620</state-number>
+        <state-number>53536</state-number>
       </table>
       <table id="23" parent="2" name="inverted_index">
         <object-id>16399</object-id>
@@ -644,11 +644,15 @@ model</columns>
         <state-number>620</state-number>
         <data-type>text</data-type>
       </column>
-      <column id="127" parent="23" name="word">
+      <column id="127" parent="22" name="title">
+        <state-number>53536</state-number>
+        <data-type>text</data-type>
+      </column>
+      <column id="128" parent="23" name="word">
         <state-number>621</state-number>
         <data-type>text</data-type>
       </column>
-      <column id="128" parent="23" name="urls">
+      <column id="129" parent="23" name="urls">
         <state-number>621</state-number>
         <data-type>text[]</data-type>
       </column>

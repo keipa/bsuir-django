@@ -1,7 +1,7 @@
 body {
         font: 1em 'Myriad Pro', Arial, sans-serif;
-        background: linear-gradient(86deg, #d5c917, #32a846, #7a51a1);
-        background-size: 600% 600%;
+        background: linear-gradient(45deg, cornflowerblue, midnightblue);
+        background-size: 200% 200%;
         animation: AnimationName 80s ease infinite;
 }
 
@@ -13,26 +13,39 @@ body {
 
 
 
-.description {
+.container{
+    border-radius: 20px;
+    width: 500px;
+    height: 100px;
     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    border: 3px solid #FFFFFF;
+}
+
+.description {
+    margin-left: 7%;
     margin-right: auto;
     width: 500px;
     height: 100px;
     color: #FFF
 
 
+
 }
 
-lborder{
-    margin-top: 10%;
+.lborder{
+    margin-top: 1%;
 }
 a{
 
-    margin-left:  34%;
+    margin-left:  5%;
+    text-align: center;
+    align-content: center;
     font-size: larger;
     font-family: Arial;
-        height: 100px;
-
+    height: 100px;
+    color: white;
 }
 h2{
     color: #fff;
