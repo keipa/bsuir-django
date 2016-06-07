@@ -38,7 +38,9 @@ def modify_html(request):
             if res[link][0]>max_range:
                 max_range = res[link][0]
                 max_link = link
-        add_result("D:/LABS/bsuir-django/search/finder/templates/finder/base.html", link, res[link][1])
+        add_result("D:/LABS/bsuir-django/search/finder/templates/finder/base.html", max_link, "content")
+
+        # res[max_link][1] - inser intead of content without unicode
         del res[max_link]
     close_file("D:/LABS/bsuir-django/search/finder/templates/finder/base.html")
     print("ready")
