@@ -33,6 +33,9 @@ def main():
     f = Finder("postgres")
     # print(f.response)
     res = f.response
+
+
+
     print("Searching for: \"", f.req, "\"")
     for link in res:
         print(link,"\n", res[link])

@@ -1,0 +1,23 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>SSearch</title>
+        <link rel="stylesheet" href='main.css'>
+</head>
+
+<body>
+<h2>Super Search Engine</h2>
+<input type="text" id="text1" id="inp" onkeypress="return runScript(event)">
+
+    <script>
+		function runScript(e) {
+            if (e.keyCode == 13) {
+    window.location = "http://127.0.0.1:8000:/search/?request=" + encodeURIComponent(event.target.value);
+}
+        }
+	</script>
+
+<div class="lborder"> </div>
+<a href="kekek.com">kekek.com</a><div class="description">ololololololol</div><a href="kekek.com">kekek.com</a><div class="description">ololololololol</div><a href="keek.com">keek.com</a><div class="description">ololololololol</div></body>
+</html>
