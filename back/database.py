@@ -11,7 +11,7 @@ class ForwardDatabase():
         self.new_ins = self.db.prepare("INSERT INTO forward_index VALUES ($1, $2, $3);")
         self.count_of_insertions = 0
         self.how_often_show_stats = 50
-        print("Forward base connected")
+        # print("Forward base connected")
 
     def show_all_words(self):
         for text in self.db.prepare("SELECT url FROM forward_index"):
@@ -86,7 +86,7 @@ class InvertedDatabase():
         self.count_of_insertions = 0
         self.how_often_show_stats = 10000
         self.find = self.db.prepare("select urls from inverted_index where word=$1;")
-        print("Inverted Base connected")
+        # print("Inverted Base connected")
 
     def show_all_words(self):
         for text in self.db.prepare("SELECT word FROM inverted_index"):

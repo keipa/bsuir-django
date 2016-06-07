@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0cfb00c-c2b2-4d7a-94a1-ddafb475552e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search/finder/templates/finder/indexing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/crawler.py" afterPath="$PROJECT_DIR$/back/crawler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/database.py" afterPath="$PROJECT_DIR$/back/database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/finder.py" afterPath="$PROJECT_DIR$/back/finder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back/indexing.py" afterPath="$PROJECT_DIR$/back/indexing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/results/base.html" afterPath="$PROJECT_DIR$/front/results/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/results/main.css" afterPath="$PROJECT_DIR$/front/results/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/htmlgen.py" afterPath="$PROJECT_DIR$/search/finder/htmlgen.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/static/css/main.css" afterPath="$PROJECT_DIR$/search/finder/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/static/css/main1.css" afterPath="$PROJECT_DIR$/search/finder/static/css/main1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/models.py" afterPath="$PROJECT_DIR$/search/finder/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/templates/finder/base.html" afterPath="$PROJECT_DIR$/search/finder/templates/finder/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/templates/finder/start.html" afterPath="$PROJECT_DIR$/search/finder/templates/finder/start.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/urls.py" afterPath="$PROJECT_DIR$/search/finder/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/finder/views.py" afterPath="$PROJECT_DIR$/search/finder/views.py" />
     </list>
     <ignored path="bsuir-django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +28,7 @@
     <SUITE FILE_PATH="coverage/bsuir-django$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1465337117094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
     <SUITE FILE_PATH="coverage/bsuir-django$database.coverage" NAME="database Coverage Results" MODIFIED="1465241955850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
     <SUITE FILE_PATH="coverage/bsuir-django$htmlgen.coverage" NAME="htmlgen Coverage Results" MODIFIED="1465260766311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search/finder" />
-    <SUITE FILE_PATH="coverage/bsuir-django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1465337296838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
+    <SUITE FILE_PATH="coverage/bsuir-django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1465341780953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/bsuir-django$finder.coverage" NAME="finder Coverage Results" MODIFIED="1465242825291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -44,6 +40,34 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PostgreSQL - postgres@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PostgreSQL - postgres@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -51,37 +75,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/finder/tests.py">
+      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="1120">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding>
+                <marker date="1465338910325" expanded="true" signature="397:442" ph="INSERT INTO forward_index... " />
+                <marker date="1465338910325" expanded="true" signature="632:661" ph="SELECT url F... forward_index" />
+                <marker date="1465338910325" expanded="true" signature="758:814" ph="SELECT conte... forward_index" />
+                <marker date="1465338910325" expanded="true" signature="935:989" ph="SELECT title... forward_index" />
+                <marker date="1465338910325" expanded="true" signature="1233:1287" ph="SELECT conte... forward_index" />
+                <marker date="1465338910325" expanded="true" signature="1471:1498" ph="SELECT * FRO... forward_index" />
+                <marker date="1465338910325" expanded="true" signature="1838:1889" ph="SELECT url F... forward_index" />
+                <marker date="1465338910325" expanded="true" signature="2746:2788" ph="INSERT INTO inverted_index... " />
+                <marker date="1465338910325" expanded="true" signature="2831:2878" ph="UPDATE inver... " />
+                <marker date="1465338910325" expanded="true" signature="2998:3043" ph="select urls inverted_index" />
+                <marker date="1465338910325" expanded="true" signature="3158:3189" ph="SELECT word inverted_index" />
+                <marker date="1465338910325" expanded="true" signature="3525:3553" ph="SELECT * FRO... inverted_index" />
+                <marker date="1465338910325" expanded="true" signature="3878:3932" ph="SELECT word inverted_index" />
+                <marker date="1465338910325" expanded="true" signature="4346:4400" ph="SELECT urls inverted_index" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/finder/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/finder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/database.py">
+      <file leaf-file-name="indexing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/indexing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-              <folding>
-                <marker date="1465337117004" expanded="true" signature="397:442" ph="INSERT INTO forward_index... " />
-                <marker date="1465337117004" expanded="true" signature="630:659" ph="SELECT url F... forward_index" />
-                <marker date="1465337117004" expanded="true" signature="756:812" ph="SELECT conte... forward_index" />
-                <marker date="1465337117004" expanded="true" signature="933:987" ph="SELECT title... forward_index" />
-                <marker date="1465337117004" expanded="true" signature="1231:1285" ph="SELECT conte... forward_index" />
-                <marker date="1465337117004" expanded="true" signature="1469:1496" ph="SELECT * FRO... forward_index" />
-                <marker date="1465337117004" expanded="true" signature="1836:1887" ph="SELECT url F... forward_index" />
-                <marker date="1465337117004" expanded="true" signature="2744:2786" ph="INSERT INTO inverted_index... " />
-                <marker date="1465337117004" expanded="true" signature="2829:2876" ph="UPDATE inver... " />
-                <marker date="1465337117004" expanded="true" signature="2996:3041" ph="select urls inverted_index" />
-                <marker date="1465337117004" expanded="true" signature="3154:3185" ph="SELECT word inverted_index" />
-                <marker date="1465337117004" expanded="true" signature="3521:3549" ph="SELECT * FRO... inverted_index" />
-                <marker date="1465337117004" expanded="true" signature="3874:3928" ph="SELECT word inverted_index" />
-                <marker date="1465337117004" expanded="true" signature="4342:4396" ph="SELECT urls inverted_index" />
-              </folding>
+            <state relative-caret-position="1661">
+              <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,14 +135,26 @@
       <file leaf-file-name="htmlgen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/finder/htmlgen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="601">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/site/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/053e3e5d-1777-4b23-a820-f4283521ee64/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
@@ -106,41 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/finder.py">
+      <file leaf-file-name="indexing.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/indexing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/finder/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/search/finder/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/indexing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="160">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -149,18 +177,18 @@
       <file leaf-file-name="crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
-              <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+            <state relative-caret-position="540">
+              <caret line="152" column="42" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/finder/admin.py">
+      <file leaf-file-name="start.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/start.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -185,17 +213,13 @@
         <option value="$PROJECT_DIR$/back/multiproc.py" />
         <option value="$PROJECT_DIR$/back/parse.py" />
         <option value="$PROJECT_DIR$/search/site/index.html" />
-        <option value="$PROJECT_DIR$/search/finder/models.py" />
         <option value="$PROJECT_DIR$/front/results/result_sample.txt" />
         <option value="$PROJECT_DIR$/front/results/playing_with_a_file.py" />
         <option value="$PROJECT_DIR$/search/finder/base.html" />
-        <option value="$PROJECT_DIR$/search/finder/urls.py" />
-        <option value="$PROJECT_DIR$/search/finder/views.py" />
         <option value="$PROJECT_DIR$/search/search/settings.py" />
         <option value="$PROJECT_DIR$/search/site/main.css" />
         <option value="$PROJECT_DIR$/front/main.css" />
         <option value="$PROJECT_DIR$/front/startpage/main.css" />
-        <option value="$PROJECT_DIR$/search/finder/templates/finder/start.html" />
         <option value="$PROJECT_DIR$/search/finder/templates/finder/base.html" />
         <option value="$PROJECT_DIR$/front/results/base.html" />
         <option value="$PROJECT_DIR$/back/finder.py" />
@@ -203,10 +227,15 @@
         <option value="$PROJECT_DIR$/search/finder/static/css/main1.css" />
         <option value="$PROJECT_DIR$/back/crawler.py" />
         <option value="$PROJECT_DIR$/back/indexing.py" />
-        <option value="$PROJECT_DIR$/back/database.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/053e3e5d-1777-4b23-a820-f4283521ee64/console.sql" />
-        <option value="$PROJECT_DIR$/search/finder/htmlgen.py" />
         <option value="$PROJECT_DIR$/search/finder/static/css/main.css" />
+        <option value="$PROJECT_DIR$/search/finder/templates/finder/indexing.html" />
+        <option value="$PROJECT_DIR$/search/finder/models.py" />
+        <option value="$PROJECT_DIR$/back/database.py" />
+        <option value="$PROJECT_DIR$/search/finder/views.py" />
+        <option value="$PROJECT_DIR$/search/finder/urls.py" />
+        <option value="$PROJECT_DIR$/search/finder/templates/finder/start.html" />
+        <option value="$PROJECT_DIR$/search/finder/htmlgen.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/053e3e5d-1777-4b23-a820-f4283521ee64/console.sql" />
       </list>
     </option>
   </component>
@@ -351,11 +380,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bsuir-django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bsuir-django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bsuir-django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bsuir-django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,12 +441,12 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\LABS\bsuir-django\front" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\LABS\bsuir-django\search\finder\templates\finder" />
       <recent name="D:\LABS\bsuir-django\search\finder\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LABS\bsuir-django\front" />
     </key>
   </component>
   <component name="RunManager" selected="Python.manage">
@@ -716,24 +785,24 @@
     <frame x="0" y="0" width="1600" height="900" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6441496" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1940874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33290488" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27956298" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8559892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.85524726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033419" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24935733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47780678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26055488" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1940874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33290488" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24935733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41002572" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40745503" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -771,13 +840,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/back/indexing.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager>
@@ -788,9 +850,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/postgresql/protocol/client3.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/requests/api.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/requests/utils.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/requests/structures.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/abc.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/_collections_abc.py" />
@@ -859,24 +918,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/main.css" />
-    <entry file="file://$PROJECT_DIR$/search/finder/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -930,14 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/a2d2086b/053e3e5d-1777-4b23-a820-f4283521ee64/postgres.public.auth_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -955,22 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="75" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -999,7 +1016,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/apps.py">
+    <entry file="file://$PROJECT_DIR$/search/finder/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1007,10 +1024,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/__init__.py">
+    <entry file="file://$PROJECT_DIR$/search/polls/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/polls/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1023,34 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/crawler.py">
+    <entry file="file://$PROJECT_DIR$/search/finder/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="134" column="41" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/053e3e5d-1777-4b23-a820-f4283521ee64/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1063,49 +1072,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/database.py">
+    <entry file="file://$PROJECT_DIR$/search/finder/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        <state relative-caret-position="40">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding>
-            <marker date="1465337117004" expanded="true" signature="397:442" ph="INSERT INTO forward_index... " />
-            <marker date="1465337117004" expanded="true" signature="630:659" ph="SELECT url F... forward_index" />
-            <marker date="1465337117004" expanded="true" signature="756:812" ph="SELECT conte... forward_index" />
-            <marker date="1465337117004" expanded="true" signature="933:987" ph="SELECT title... forward_index" />
-            <marker date="1465337117004" expanded="true" signature="1231:1285" ph="SELECT conte... forward_index" />
-            <marker date="1465337117004" expanded="true" signature="1469:1496" ph="SELECT * FRO... forward_index" />
-            <marker date="1465337117004" expanded="true" signature="1836:1887" ph="SELECT url F... forward_index" />
-            <marker date="1465337117004" expanded="true" signature="2744:2786" ph="INSERT INTO inverted_index... " />
-            <marker date="1465337117004" expanded="true" signature="2829:2876" ph="UPDATE inver... " />
-            <marker date="1465337117004" expanded="true" signature="2996:3041" ph="select urls inverted_index" />
-            <marker date="1465337117004" expanded="true" signature="3154:3185" ph="SELECT word inverted_index" />
-            <marker date="1465337117004" expanded="true" signature="3521:3549" ph="SELECT * FRO... inverted_index" />
-            <marker date="1465337117004" expanded="true" signature="3874:3928" ph="SELECT word inverted_index" />
-            <marker date="1465337117004" expanded="true" signature="4342:4396" ph="SELECT urls inverted_index" />
+            <element signature="e#77#109#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/htmlgen.py">
+    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/back/finder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="680">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/finder/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/back/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="1120">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <marker date="1465338910325" expanded="true" signature="397:442" ph="INSERT INTO forward_index... " />
+            <marker date="1465338910325" expanded="true" signature="632:661" ph="SELECT url F... forward_index" />
+            <marker date="1465338910325" expanded="true" signature="758:814" ph="SELECT conte... forward_index" />
+            <marker date="1465338910325" expanded="true" signature="935:989" ph="SELECT title... forward_index" />
+            <marker date="1465338910325" expanded="true" signature="1233:1287" ph="SELECT conte... forward_index" />
+            <marker date="1465338910325" expanded="true" signature="1471:1498" ph="SELECT * FRO... forward_index" />
+            <marker date="1465338910325" expanded="true" signature="1838:1889" ph="SELECT url F... forward_index" />
+            <marker date="1465338910325" expanded="true" signature="2746:2788" ph="INSERT INTO inverted_index... " />
+            <marker date="1465338910325" expanded="true" signature="2831:2878" ph="UPDATE inver... " />
+            <marker date="1465338910325" expanded="true" signature="2998:3043" ph="select urls inverted_index" />
+            <marker date="1465338910325" expanded="true" signature="3158:3189" ph="SELECT word inverted_index" />
+            <marker date="1465338910325" expanded="true" signature="3525:3553" ph="SELECT * FRO... inverted_index" />
+            <marker date="1465338910325" expanded="true" signature="3878:3932" ph="SELECT word inverted_index" />
+            <marker date="1465338910325" expanded="true" signature="4346:4400" ph="SELECT urls inverted_index" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="152" column="42" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1661">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/templates/finder/indexing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/finder/htmlgen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/053e3e5d-1777-4b23-a820-f4283521ee64/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
