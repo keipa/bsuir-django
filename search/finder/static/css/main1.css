@@ -1,7 +1,6 @@
 body {
         font: 1em 'Myriad Pro', Arial, sans-serif;
-        /*background-image: url('http://subtlepatterns.com/patterns/zwartevilt.png');*/
-        /*background-color: #FFF;*/
+
 background: linear-gradient(86deg, #d5c917, #32a846, #7a51a1);
 background-size: 600% 600%;
 
@@ -13,7 +12,7 @@ animation: AnimationName 24s ease infinite;
 
 }
 
-@keyframes AnimationName { 
+@keyframes AnimationName {
     0%{background-position:0% 86%}
     50%{background-position:100% 15%}
     100%{background-position:0% 86%}
@@ -37,26 +36,26 @@ position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%)
 }
 
 h2{
     color: #fff;
 text-align:center;
-position: relative 
+position: relative
 }
 
 p{
     color: #fff;
 
-position: relative 
+position: relative
 }
 
 #text1 {
     border: 2px solid rgb(173, 204, 204);
     height: 31px;
     margin-left: auto;
-position: relative 
+position: relative;
     margin-right: auto;
     width: 223px;
     box-shadow: 0 0 27px rgb(204, 204, 204) inset;
@@ -69,8 +68,8 @@ position: relative
     margin-right: auto;
             background: #FFF;
             height: 25px;
-position: relative 
-            width: 150x;
+position: relative;
+            width: 150px;
             border-radius: 2em;
             border: none;
             color: #A2A2A2;
@@ -84,7 +83,7 @@ position: relative
 #text1:focus {
     width: 260px;
     transition: 500ms all ease;
-position: relative 
+position: relative;
     background-size: 25px 25px;
     background-position: 96% 62%;
     padding: 3px 32px 3px 3px;

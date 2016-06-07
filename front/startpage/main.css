@@ -30,7 +30,7 @@ height:150px;
 }
 
 
-.description {
+.container{
 margin-left: auto;
     margin-right: auto;
 position: absolute;
@@ -89,4 +89,3 @@ position: relative
     background-position: 96% 62%;
     padding: 3px 32px 3px 3px;
 }
-

@@ -23,7 +23,7 @@ def add_result(file, link, desc):
 
 def close_file(file):
     f = open(file, "a")
-    f.write("</body>\n</html>")
+    f.write("</body>\n</html>\n{% endblock content %}")
 
 
 def modify_html(request):
