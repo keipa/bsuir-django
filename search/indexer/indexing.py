@@ -1,8 +1,8 @@
 from crawler import *
-from collections import deque
+import Queue
 from multiprocessing import Process
 import argparse
-from models import Link
+from models import Forward, Inverted
 
 
 def create_parser():
@@ -26,26 +26,31 @@ def benchmark(func):
 
 class Indexer():
     def __init__(self, start_url):
-        self.quene = deque([start_url])
+        # self.queue = deque([start_url])
+        self.queue = Queue.Queue()
+        self.queue.put(start_url)
 #        self.inv = database.InvertedDatabase()
 #        self.forw = database.ForwardDatabase()
         self.indexed = 0
 
-    def process_link(self):
+    def process(self):
         # try:
         self.indexed += 1
-        cur = Crawler(self.quene.popleft())
-        if cur.is_banned:
-            print("banned by ", cur.web_address)
-            return
-        for link in cur.urls_on_the_page:
-            self.quene.append(link)
+        while not self.queue.empty():
+            cur = Crawler(self.queue.get())
+            if cur.is_banned:
+                print("banned by ", cur.web_address)
+                return
+            for link in cur.urls_on_the_page:
+                self.queue.put(link)
 
-        try:
-            Link.objects.get(link=cur.web_address)
-            print("repeated link:  " + cur.web_address)
-        except Link.DoesNotExist:
-            Link(link = cur.web_address, title = cur.title, text = " ".join(cur.clear_text)).save()
+            try:
+                Forward.objects.get(link=cur.web_address)
+                print("repeated link:  " + cur.web_address)
+            except Forward.DoesNotExist:
+                Forward(link = cur.web_address, title = cur.title, text = " ".join(cur.clear_text),
+                    number_of_words = len(cur.clear_text)).save()
+                print("Indexed {}".format(cur.web_address))
         
             # print("Indexing: " + cur.web_address +" words:" + str(cur.count_of_words))
             # for each in cur.clear_text:
@@ -55,11 +60,16 @@ class Indexer():
         # oh you))
 
 
-def multiproc(a):
-    p1 = Process(target=a.process_link())
-    p2 = Process(target=a.process_link())
-    p3 = Process(target=a.process_link())
-    p4 = Process(target=a.process_link())
+def multiproc():
+    indexer1 = Indexer("https://www.postgresql.org/")
+    indexer2 = Indexer("https://www.wikipedia.org/")
+    indexer3 = Indexer("https://www.facebook.com/")
+    indexer4 = Indexer("http://www.addictinggames.com/")
+
+    p1 = Process(target=indexer1.process)
+    p2 = Process(target=indexer2.process)
+    p3 = Process(target=indexer3.process)
+    p4 = Process(target=indexer4.process)
     p1.start()
     p2.start()
     p3.start()
@@ -74,12 +84,12 @@ def multiproc(a):
 def indexing(link, count):
 
     print("Entering point: {},\n going throught {} links".format(link, str(count)))
-    a = Indexer(link)
+    # a = Indexer(link)
     # cpus = multiprocessing.cpu_count()
     # for _ in range(int(count/4)):
-    #     multiproc(a)
-    a.process_link()
-    print("indexed: "+str(a.indexed))
+    multiproc()
+    # a.process_link()
+    # print("indexed: "+str(a.indexed))
     # a.process_link()
 
 
