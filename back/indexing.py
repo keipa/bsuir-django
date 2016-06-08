@@ -40,7 +40,7 @@ class Indexer():
             return
         for link in cur.urls_on_the_page:
             self.quene.append(link)
-        if self.forw.make_insertion(cur.web_address, cur.string_text) == 0:
+        if self.forw.make_insertion(cur.web_address, cur.clear_text, cur.title) == 0:
             print("Indexing: " + cur.web_address +" words:"+str(cur.count_of_words))
             for each in cur.clear_text:
                 self.inv.make_insertion(each, cur.web_address)

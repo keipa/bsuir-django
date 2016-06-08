@@ -29,9 +29,12 @@ class Crawler():
             self.clear_text = text[1]
             self.string_text = text[0]
             self.count_of_words = len(self.clear_text)
+            self.title = self.get_title(self.full_html)
         # print("words:" + str(self.count_of_words) + "->",)
         # print(text[2])
         # print(self.full_html)
+
+
 
 
     def get_html_on_the_page(self,web_aderess):
@@ -40,6 +43,14 @@ class Crawler():
             print("site doesn't like us")
         else:
             return a.text
+
+    def get_title(self, text):
+        # need h1..h6
+        # b em i small strong sub sup ins del
+        # code kbd samp var pre
+        # abbr bdo blockquote q cite dfn p br hr
+        soup = BeautifulSoup(text, 'html.parser')
+        return soup.title.text
 
     def get_readable_text(self, text):
         # need h1..h6
@@ -50,7 +61,7 @@ class Crawler():
         docs = []
         words = []
         text = ""
-        docs.append(soup.title.text)
+        # docs.append(soup.title.text)
         tag_array = {"b",
                     "em",
                      "i",
@@ -104,22 +115,24 @@ class Crawler():
                 docs.append(content.get_text())
 
         for frase in docs:
-            if len(frase)!=0:
-                text += frase+ " "
+            if len(frase) != 0:
+                text += frase + " "
                 for word in frase.split(" "):
                     e = word.replace("'", "")
-                    e = e.replace(",", "")
-                    e = e.replace("(", "")
-                    e = e.replace(")", "")
-                    e = e.replace("+", "")
-                    e = e.replace(".", "")
-                    e = e.replace("=", "")
-                    e = e.replace("[", "")
-                    e = e.replace("]", "")
-                    e = e.replace("{", "")
-                    e = e.replace("}", "")
-                    e = e.replace(" ", "")
-                    e = e.lower()
+                    e = e.replace(",", "")\
+                         .replace("(", "")\
+                         .replace(")", "")\
+                         .replace(")", "")\
+                         .replace("+", "")\
+                         .replace(".", "")\
+                         .replace("=", "")\
+                         .replace("[", "")\
+                         .replace("]", "")\
+                         .replace("{", "")\
+                         .replace("}", "")\
+                         .replace(" ", "")\
+                         .lower()\
+                         .replace("\n", "")
                     if len(e) == 0:
                         continue
                     words.append(e)

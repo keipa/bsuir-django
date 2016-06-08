@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 from django.db import models
 
 
-
 class SearchResult(models.Model):
     bigname = models.CharField(max_length=100)
     # link = models.permalink()

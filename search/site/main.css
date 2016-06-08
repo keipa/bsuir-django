@@ -1,60 +1,60 @@
-body {
-        font: 1em 'Myriad Pro', Arial, sans-serif;
-        background: linear-gradient(86deg, #d5c917, #32a846, #7a51a1);
-        background-size: 600% 600%;
-        animation: AnimationName 80s ease infinite;
-}
+/*body {*/
+        /*font: 1em 'Myriad Pro', Arial, sans-serif;*/
+        /*background: linear-gradient(86deg, #d5c917, #32a846, #7a51a1);*/
+        /*background-size: 600% 600%;*/
+        /*animation: AnimationName 80s ease infinite;*/
+/*}*/
 
-@keyframes AnimationName {
-    0%{background-position:0% 86%}
-    50%{background-position:100% 15%}
-    100%{background-position:0% 86%}
-}
-
-
-
-.description {
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    height: 100px;
-    color: #FFF
+/*@keyframes AnimationName {*/
+    /*0%{background-position:0% 86%}*/
+    /*50%{background-position:100% 15%}*/
+    /*100%{background-position:0% 86%}*/
+/*}*/
 
 
-}
 
-lborder{
-    margin-top: 10%;
-}
-a{
+/*.description {*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*width: 500px;*/
+    /*height: 100px;*/
+    /*color: #FFF*/
 
-    margin-left:  34%;
-    font-size: larger;
-    font-family: Arial;
-        height: 100px;
 
-}
-h2{
-    color: #fff;
-    text-align:center;
-    position: relative
-}
+/*}*/
 
-#text1 {
-    border: 2px solid rgb(173, 204, 204);
-    height: 31px;
-    box-shadow: 0 0 27px rgb(204, 204, 204) inset;
-    transition: 500ms all ease;
-    margin-left: 45%;
-    background: #FFF;
-    height: 25px;
-    position: relative;
-    width: 150px;
-    border-radius: 2em;
-    border: none;
-    color: #A2A2A2;
-    padding-left: 1.5em;
-    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%)
+/*lborder{*/
+    /*margin-top: 10%;*/
+/*}*/
+/*a{*/
 
-}
+    /*margin-left:  34%;*/
+    /*font-size: larger;*/
+    /*font-family: Arial;*/
+        /*height: 100px;*/
+
+/*}*/
+/*h2{*/
+    /*color: #fff;*/
+    /*text-align:center;*/
+    /*position: relative*/
+/*}*/
+
+/*#text1 {*/
+    /*border: 2px solid rgb(173, 204, 204);*/
+    /*height: 31px;*/
+    /*box-shadow: 0 0 27px rgb(204, 204, 204) inset;*/
+    /*transition: 500ms all ease;*/
+    /*margin-left: 45%;*/
+    /*background: #FFF;*/
+    /*height: 25px;*/
+    /*position: relative;*/
+    /*width: 150px;*/
+    /*border-radius: 2em;*/
+    /*border: none;*/
+    /*color: #A2A2A2;*/
+    /*padding-left: 1.5em;*/
+    /*box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%)*/
+
+/*}*/
 
