@@ -10,8 +10,8 @@
     <script>
 		function runSearchScript(e) {
             if (e.keyCode == 13) {
-                window.alert("kek");
-                $.ajax({
+                //window.alert("kek");
+               /* $.ajax({
                     method: 'GET',
                     url: 'http://127.0.0.1:8000/rest-auth/logout/',
                     data: {
@@ -23,8 +23,9 @@
                         sessionStorage.removeItem(tokenKey, data.key);
                         $scope.$apply();
                     },
-                });
-                //window.location = "http://127.0.0.1:8000:/search/?request=" + encodeURIComponent(event.target.value);
+                });*/
+
+                window.location = "http://127.0.0.1:8000/search/?r=" + encodeURIComponent(e.target.value);
             }           
         }
 	</script>

@@ -5,6 +5,6 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^search/(?P<r>[0-9]+)/$', views.search, name='search'),
+    url(r'^search/$', views.search, name='search'),
     url(r'^$', views.first_page, name='first_page'),
 ]
