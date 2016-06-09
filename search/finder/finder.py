@@ -7,13 +7,16 @@ class Result():
         self.description = description
 
 def get_results(request):
-    results = []
+    links = set()
+    words = request.split(" ")
     try:
         for word in request.split(" "):
-            links = Inverted.objects.get(word = request).links
-            for cur_link in links:
-                link_info = Forward.objects.get(link = cur_link)
-                results.append(Result(link_info.link, link_info.title, link_info.text[:100]))
+            links.update(Inverted.objects.filter(word = request).link)
+            # for cur_link in links:
+            #     link_info = Forward.objects.get(link = cur_link)
+            #     results.append(Result(link_info.link, link_info.title, link_info.text[:100]))
+
+
 
     except Inverted.DoesNotExist:
         print ("nu da lando")

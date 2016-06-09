@@ -54,12 +54,12 @@ class Indexer():
 
             for current_word in cur.clear_text:
                 try:
-                    w = Inverted.objects.get(word = current_word)
-                    w.links.append(cur.web_address)
+                    w = Inverted.objects.get(word = current_word, link = cur.web_address)
+                    w.entries += 1
                     w.save()
                     print(current_word)
                 except Inverted.DoesNotExist:
-                    Inverted(word = current_word, links = [cur.web_address]).save()    
+                    Inverted(word = current_word, link = cur.web_address).save()    
                     print(current_word)
             # print("Indexing: " + cur.web_address +" words:" + str(cur.count_of_words))
             # for each in cur.clear_text:

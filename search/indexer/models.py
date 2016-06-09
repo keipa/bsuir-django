@@ -15,9 +15,8 @@ class Forward(models.Model):
 
 class Inverted(models.Model):
     word = models.CharField(max_length=50)
-    links =  ArrayField(
-        models.TextField(blank=True),
-    )
+    link = models.TextField(blank=True)
+    entries = models.IntegerField(default = 1) 
     
     def __str__(self):
         return self.word
