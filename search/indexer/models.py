@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
+
 
 class Forward(models.Model):
     link = models.CharField(max_length=100)
@@ -12,9 +14,13 @@ class Forward(models.Model):
         return self.link
 
 class Inverted(models.Model):
-	word = models.CharField(max_length=50)
-	links = models.TextField()
-
+    word = models.CharField(max_length=50)
+    links =  ArrayField(
+        models.TextField(blank=True),
+    )
+    
+    def __str__(self):
+        return self.word
 
 
 # Create your models here.

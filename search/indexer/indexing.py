@@ -51,7 +51,16 @@ class Indexer():
                 Forward(link = cur.web_address, title = cur.title, text = " ".join(cur.clear_text),
                     number_of_words = len(cur.clear_text)).save()
                 print("Indexed {}".format(cur.web_address))
-        
+
+            for current_word in cur.clear_text:
+                try:
+                    w = Inverted.objects.get(word = current_word)
+                    w.links.append(cur.web_address)
+                    w.save()
+                    print(current_word)
+                except Inverted.DoesNotExist:
+                    Inverted(word = current_word, links = [cur.web_address]).save()    
+                    print(current_word)
             # print("Indexing: " + cur.web_address +" words:" + str(cur.count_of_words))
             # for each in cur.clear_text:
             #     self.inv.make_insertion(each, cur.web_address)
@@ -61,7 +70,7 @@ class Indexer():
 
 
 def multiproc():
-    indexer1 = Indexer("https://www.postgresql.org/")
+    indexer1 = Indexer("https://www.python.org/")
     indexer2 = Indexer("https://www.wikipedia.org/")
     indexer3 = Indexer("https://www.facebook.com/")
     indexer4 = Indexer("http://www.addictinggames.com/")

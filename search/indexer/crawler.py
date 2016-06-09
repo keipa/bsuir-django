@@ -18,7 +18,7 @@ class Crawler():
         self.full_html = ""
         self.web_address = web_address
 
-        a = requests.get(web_address)
+        a = requests.get(web_address)# .content
         self.is_banned = False
         if a.status_code != 200:
             self.is_banned = True
@@ -64,7 +64,7 @@ class Crawler():
         text = ""
         # docs.append(soup.title.text)
         tag_array = {"b",
-                    "em",
+                     "em",
                      "i",
                      "small",
                      "strong",
@@ -86,31 +86,8 @@ class Crawler():
                      "p",
                      "hr"
 
+        }
 
-}
-        # tag_array = {"b",
-        #              "em",
-        #              "i",
-        #              "small",
-        #              "strong",
-        #              "sub",
-        #              "sup",
-        #              "ins",
-        #              "del",
-        #              "code",
-        #              "kbd",
-        #              "samp",
-        #              "var",
-        #              "pre",
-        #              "abbr",
-        #              "bdo",
-        #              "blockquote",
-        #              "q",
-        #              "cite",
-        #              "dfn",
-        #              "p",
-        #              "br",
-        #              "hr"}
         for tag in tag_array:
             for content in soup.find_all(tag):
                 docs.append(content.get_text())
