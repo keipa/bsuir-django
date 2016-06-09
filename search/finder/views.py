@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from . import htmlgen
-
+from finder import get_results
 
 def first_page(request):
     print("LANDING")
@@ -10,7 +9,8 @@ def first_page(request):
 def search(request):
     print("SEARCHING")
     # htmlgen.modify_html(request)
-    return render(request, 'finder/base.html', {})
+    results = get_results(request.GET["request"])
+    return render(request, 'finder/search.html', {"results": results})
 
 
 

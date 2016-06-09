@@ -2,5 +2,11 @@
 
 {% block content %}
     <div>
+    	{% for result in results %}
+	        <div class="search_result">
+            	<h2><a href="">{{ result.title }}</a></h2>
+            	<div>{{ result.description }}</div>
+        	</div>
+    	{% endfor %}
     </div>
 {% endblock %}
