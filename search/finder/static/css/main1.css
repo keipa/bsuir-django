@@ -33,7 +33,7 @@ position: absolute;
     transform: translate(-50%, -50%)
 }
 
-.container{
+.search_result{
 margin-left: auto;
     margin-right: auto;
 position: relative;

@@ -57,10 +57,10 @@ class Indexer():
                     w = Inverted.objects.get(word = current_word, link = cur.web_address)
                     w.entries += 1
                     w.save()
-                    print(current_word)
+                    # print(current_word)
                 except Inverted.DoesNotExist:
                     Inverted(word = current_word, link = cur.web_address).save()    
-                    print(current_word)
+                    # print(current_word)
             # print("Indexing: " + cur.web_address +" words:" + str(cur.count_of_words))
             # for each in cur.clear_text:
             #     self.inv.make_insertion(each, cur.web_address)
@@ -73,7 +73,7 @@ def multiproc():
     indexer1 = Indexer("https://www.python.org/")
     indexer2 = Indexer("https://www.wikipedia.org/")
     indexer3 = Indexer("https://www.facebook.com/")
-    indexer4 = Indexer("http://www.addictinggames.com/")
+    indexer4 = Indexer("https://www.twitter.com/")
 
     p1 = Process(target=indexer1.process)
     p2 = Process(target=indexer2.process)

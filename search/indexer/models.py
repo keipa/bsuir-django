@@ -5,16 +5,16 @@ from django.contrib.postgres.fields import ArrayField
 
 
 class Forward(models.Model):
-    link = models.CharField(max_length=100)
+    link = models.TextField()
     text = models.TextField()
-    title = models.CharField(max_length=100)
+    title = models.TextField()
     number_of_words = models.IntegerField()
 
     def __str__(self):
         return self.link
 
 class Inverted(models.Model):
-    word = models.CharField(max_length=50)
+    word = models.TextField(blank=True)
     link = models.TextField(blank=True)
     entries = models.IntegerField(default = 1) 
     
