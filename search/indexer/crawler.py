@@ -64,6 +64,7 @@ class Crawler():
         text = ""
         # docs.append(soup.title.text)
         tag_array = {"b",
+                     "title",
                      "em",
                      "i",
                      "small",
@@ -85,7 +86,6 @@ class Crawler():
                      "dfn",
                      "p",
                      "hr"
-
         }
 
         for tag in tag_array:

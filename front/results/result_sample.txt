@@ -1,2 +1,0 @@
-<a href="https://www.postgresql.org/">https://www.postgresql.org/</a>
-<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id mauris nulla. Suspendisse molestie arcu finibus, efficitur leo non, fermentum eros. Sed sed magna tristique, fringilla lacus vel amet.</div>

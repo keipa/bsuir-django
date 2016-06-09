@@ -4,8 +4,8 @@
     <div>
     	{% for result in results %}
 	        <div class="search_result">
-            	<h2><a href="">{{ result.title }}</a></h2>
-            	<div>{{ result.description }}</div>
+            	<h2><a href= {{ result.link }}>{{ result.title }}</a></h2>
+            	<div class ="description">{{ result.description }}</div>
         	</div>
     	{% endfor %}
     </div>

@@ -32,7 +32,7 @@ def get_results(request):
             link_info = Forward.objects.get(link = cur_link)
             results.append(
                 Result(cur_link, link_info.title,
-                    link_info.text[:100],
+                    link_info.text[:500],
                     get_score_bm25(words, len(links), link_info, average_number_of_words))
                 )
         results = ranging(results)    
