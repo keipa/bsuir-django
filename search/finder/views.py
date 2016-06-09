@@ -9,7 +9,7 @@ def first_page(request):
 
 def search(request):
     print("SEARCHING")
-    htmlgen.modify_html(request)
+    # htmlgen.modify_html(request)
     return render(request, 'finder/base.html', {})
 
 
