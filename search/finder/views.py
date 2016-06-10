@@ -1,19 +1,17 @@
 from django.shortcuts import render
 from finder import get_results
+from indexer.indexing import process_one_link
 
 def first_page(request):
-    print("LANDING")
     return render(request, 'finder/start.html', {})
 
 
 def search(request):
-    print("SEARCHING")
-    # htmlgen.modify_html(request)
     results = get_results(request.GET["request"])
     return render(request, 'finder/search.html', {"results": results})
 
-
-
-# Create your views here.
+def index(request):
+	process_one_link(request.GET["link"])
+	return render(request, 'finder/start.html', {})
 
 

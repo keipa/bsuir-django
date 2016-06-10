@@ -63,29 +63,18 @@ class Crawler():
         words = []
         text = ""
         # docs.append(soup.title.text)
-        tag_array = {"b",
-                     "title",
-                     "em",
-                     "i",
-                     "small",
-                     "strong",
-                     "sub",
-                     "sup",
-                     "ins",
-                     "del",
-                     "code",
-                     "kbd",
-                     "samp",
-                     "var",
-                     "pre",
-                     "abbr",
-                     "bdo",
-                     "blockquote",
-                     "q",
-                     "cite",
-                     "dfn",
-                     "p",
-                     "hr"
+        tag_array = {
+            "a",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "title",
+            "span",
+            "b",
+            "p", 
         }
 
         for tag in tag_array:

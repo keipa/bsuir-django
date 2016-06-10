@@ -37,42 +37,43 @@ class Indexer():
         # try:
         self.indexed += 1
         while not self.queue.empty():
-            cur = Crawler(self.queue.get())
-            if cur.is_banned:
-                print("banned by ", cur.web_address)
-                return
-            for link in cur.urls_on_the_page:
-                self.queue.put(link)
+            self.process_one_link()
+      
+    def process_one_link(self):
+        cur = Crawler(self.queue.get())
+        if cur.is_banned:
+            print("banned by ", cur.web_address)
+            return
+        for link in cur.urls_on_the_page:
+            self.queue.put(link)
 
+        try:
+            Forward.objects.get(link=cur.web_address)
+            print("repeated link:  " + cur.web_address)
+        except Forward.DoesNotExist:
+            Forward(link = cur.web_address, title = cur.title, text = " ".join(cur.clear_text),
+                number_of_words = len(cur.clear_text)).save()
+            print("Indexed {}".format(cur.web_address))
+
+        for current_word in cur.clear_text:
             try:
-                Forward.objects.get(link=cur.web_address)
-                print("repeated link:  " + cur.web_address)
-            except Forward.DoesNotExist:
-                Forward(link = cur.web_address, title = cur.title, text = " ".join(cur.clear_text),
-                    number_of_words = len(cur.clear_text)).save()
-                print("Indexed {}".format(cur.web_address))
+                w = Inverted.objects.get(word = current_word, link = cur.web_address)
+                w.entries += 1
+                w.save()
+            except Inverted.DoesNotExist:
+                Inverted(word = current_word, link = cur.web_address).save()    
 
-            for current_word in cur.clear_text:
-                try:
-                    w = Inverted.objects.get(word = current_word, link = cur.web_address)
-                    w.entries += 1
-                    w.save()
-                    # print(current_word)
-                except Inverted.DoesNotExist:
-                    Inverted(word = current_word, link = cur.web_address).save()    
-                    # print(current_word)
-            # print("Indexing: " + cur.web_address +" words:" + str(cur.count_of_words))
-            # for each in cur.clear_text:
-            #     self.inv.make_insertion(each, cur.web_address)
-        # except:
-        #     print("quene is empty")
-        # oh you))
+ 
+def process_one_link(web_adress):
+    indexer = Indexer(web_adress)
+    proc = Process(target = indexer.process_one_link)
+    proc.start()
 
 
 def multiproc():
     indexer1 = Indexer("https://www.python.org/")
-    indexer2 = Indexer("https://www.wikipedia.org/")
-    indexer3 = Indexer("https://www.facebook.com/")
+    indexer2 = Indexer("https://www.postgresql.org/")
+    indexer3 = Indexer("https://angularjs.org/")
     indexer4 = Indexer("https://www.twitter.com/")
 
     p1 = Process(target=indexer1.process)
@@ -83,10 +84,6 @@ def multiproc():
     p2.start()
     p3.start()
     p4.start()
-    p1.join()
-    p2.join()
-    p3.join()
-    p4.join()
 
 
 

@@ -2,30 +2,21 @@
 {% block content %}
 	<div class="container">
         <div class="image"></div>
-		<h2>Sukhov Search Engine</h2>
-        <p>Searching/Indexing for:</h2>
-        <input type="text" id="text1" id="inp" onkeypress="return runSearchScript(event)"><br>
+        <input type="text" id="search" placeholder="Search..." onkeypress="return search(event)"><br>
+        <input type="text" id="index" placeholder="Index..." onkeypress="return index(event)"><br>
     </div>
 
     <script>
-		function runSearchScript(e) {
+		function search(e) {
             if (e.keyCode == 13) {
-                //window.alert("kek");
-               /* $.ajax({
-                    method: 'GET',
-                    url: 'http://127.0.0.1:8000/rest-auth/logout/',
-                    data: {
-                        "token": token,
-                    },
-                    success: function(data){
-                        $scope.isAuthorized = false;
-                        $scope.notes = []
-                        sessionStorage.removeItem(tokenKey, data.key);
-                        $scope.$apply();
-                    },
-                });*/
-
                 window.location = "http://127.0.0.1:8000/search/?request=" + encodeURIComponent(e.target.value);
+            }           
+        }
+
+
+        function index(e) {
+            if (e.keyCode == 13) {
+                window.location = "http://127.0.0.1:8000/index/?link=" + encodeURIComponent(e.target.value);
             }           
         }
 	</script>
